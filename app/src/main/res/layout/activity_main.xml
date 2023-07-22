@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myNameTextInputLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="clear_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myNameTextInputEditText"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myEmailTextInputLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="clear_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myEmailTextInputEditText"
+            android:maxLength="31"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myNumberTextInputLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_add_ic_call_24"
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="clear_text"
+        app:prefixText="+88"
+        app:prefixTextColor="#3F51B5"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myNumberTextInputEditText"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Phone Number"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myPasswordTextInputLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="password_toggle"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myPasswordTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Information"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
